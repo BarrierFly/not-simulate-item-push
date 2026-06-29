@@ -53,4 +53,4 @@ Output / 输出: `build/libs/notsimulateitempush-<version>.jar`
 
 ## License / 许可
 
-WTFPL — Do What The Fuck You Want To Public License
+[WTFPL](http://www.wtfpl.net/) — Do What The Fuck You Want To Public License
