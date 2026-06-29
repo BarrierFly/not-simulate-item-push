@@ -9,7 +9,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 
 /**
- * Simple JSON-backed config. Stored in {@code config/nopistonentity.json}.
+ * Simple JSON-backed config. Stored in {@code config/notsimulateitempush.json}.
  */
 public class ModConfig {
 
