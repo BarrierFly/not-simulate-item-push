@@ -1,0 +1,30 @@
+{
+    "schemaVersion": 1,
+    "id": "nopistonentity",
+    "version": "${version}",
+    "name": "No Piston Entity Push",
+    "description": "Disables client-side piston pushing of item entities (掉落物). Other entities are unaffected.",
+    "authors": ["CCSwitch"],
+    "contact": {},
+    "license": "MIT",
+    "environment": "client",
+    "entrypoints": {
+        "client": [
+            "com.ccswitch.nopistonentity.NoPistonEntityMod"
+        ],
+        "modmenu": [
+            "com.ccswitch.nopistonentity.config.ModMenuIntegration"
+        ]
+    },
+    "mixins": [
+        "nopistonentity.mixins.json"
+    ],
+    "depends": {
+        "fabricloader": ">=0.16.0",
+        "minecraft": "~1.21.11",
+        "java": ">=21"
+    },
+    "suggests": {
+        "modmenu": ">=17.0.0"
+    }
+}

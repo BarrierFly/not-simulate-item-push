@@ -1,0 +1,13 @@
+{
+    "required": true,
+    "package": "com.ccswitch.nopistonentity.mixin",
+    "compatibilityLevel": "JAVA_21",
+    "client": [
+        "PistonEntityPushMixin",
+        "PistonBlockCollisionMixin",
+        "MovingPistonCollisionMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}
