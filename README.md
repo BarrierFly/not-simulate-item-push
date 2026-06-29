@@ -13,7 +13,7 @@ Two independently toggleable features (Mod Menu integration, no restart needed):
 | Feature / 功能 | Default / 默认 | What it does / 说明 |
 |---|---|---|
 | **Skip Item Push** | ON / 开 | Client skips piston movement simulation for item entities / 客户端跳过活塞推动掉落物的模拟 |
-| **Disable Piston Collision** | OFF / 关 | Piston/piston head/moving piston blocks report empty collision shape / 活塞底座/活塞头/移动方块报告无碰撞 |
+| **Disable Piston Collision** | ON / 开 | Piston/piston head/moving piston blocks report empty collision shape / 活塞底座/活塞头/移动方块报告无碰撞 |
 
 All changes are **client-side only**.
 所有修改**仅客户端生效**。
@@ -39,7 +39,7 @@ If Mod Menu is installed, click the config button in the mod list. Otherwise, ed
 ```json
 {
   "skipItemPush": true,
-  "disablePistonCollision": false
+  "disablePistonCollision": true
 }
 ```
 
