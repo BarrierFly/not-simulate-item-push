@@ -19,7 +19,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  * {@code Entity.move()}, so the {@code instanceof} check only runs when a piston
  * actually pushes an entity — not on every entity movement tick.</p>
  *
- * <p>Also checks {@link ModConfig#enabled} so the feature can be toggled in-game
+ * <p>Also checks {@link ModConfig#skipItemPush} so the feature can be toggled in-game
  * via Mod Menu without restarting.</p>
  */
 @Mixin(PistonMovingBlockEntity.class)

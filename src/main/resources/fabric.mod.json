@@ -6,7 +6,7 @@
     "description": "Client-side: skips piston simulation for item entities so they aren't visually pushed. Server simulation is unaffected.",
     "authors": ["CCSwitch"],
     "contact": {},
-    "license": "MIT",
+    "license": "WTFPL",
     "environment": "client",
     "entrypoints": {
         "client": [
