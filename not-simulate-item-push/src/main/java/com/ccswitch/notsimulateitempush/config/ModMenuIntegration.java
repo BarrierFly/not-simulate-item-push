@@ -1,4 +1,4 @@
-package com.ccswitch.nopistonentity.config;
+package com.ccswitch.notsimulateitempush.config;
 
 import com.terraformersmc.modmenu.api.ConfigScreenFactory;
 import com.terraformersmc.modmenu.api.ModMenuApi;

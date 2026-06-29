@@ -1,4 +1,4 @@
-package com.ccswitch.nopistonentity.config;
+package com.ccswitch.notsimulateitempush.config;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -14,7 +14,7 @@ import java.nio.file.Path;
 public class ModConfig {
 
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
-    private static final Path PATH = FabricLoader.getInstance().getConfigDir().resolve("nopistonentity.json");
+    private static final Path PATH = FabricLoader.getInstance().getConfigDir().resolve("notsimulateitempush.json");
 
     private static ModConfig instance;
 

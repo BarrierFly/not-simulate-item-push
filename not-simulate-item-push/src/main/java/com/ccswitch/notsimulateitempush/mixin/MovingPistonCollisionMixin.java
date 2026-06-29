@@ -1,6 +1,6 @@
-package com.ccswitch.nopistonentity.mixin;
+package com.ccswitch.notsimulateitempush.mixin;
 
-import com.ccswitch.nopistonentity.config.ModConfig;
+import com.ccswitch.notsimulateitempush.config.ModConfig;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.core.BlockPos;

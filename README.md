@@ -4,7 +4,7 @@ Monorepo for my Minecraft Fabric mods, each in its own subdirectory.
 
 | Mod | MC Version | Description |
 |---|---|---|
-| [no-piston-entity-push](./no-piston-entity-push) | 1.21.11 | Disable piston pushing of item entities |
+| [not-simulate-item-push](./not-simulate-item-push) | 1.21.11 | Client-side: skip piston simulation for item entities |
 
 ## Development
 

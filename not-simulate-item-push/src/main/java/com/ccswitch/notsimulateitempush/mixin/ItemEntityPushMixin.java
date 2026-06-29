@@ -1,11 +1,11 @@
-package com.ccswitch.nopistonentity.mixin;
+package com.ccswitch.notsimulateitempush.mixin;
 
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.core.Direction;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.item.ItemEntity;
-import com.ccswitch.nopistonentity.config.ModConfig;
+import com.ccswitch.notsimulateitempush.config.ModConfig;
 import net.minecraft.world.level.block.piston.PistonMovingBlockEntity;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -24,7 +24,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
  */
 @Mixin(PistonMovingBlockEntity.class)
 @Environment(EnvType.CLIENT)
-public abstract class PistonEntityPushMixin {
+public abstract class ItemEntityPushMixin {
 
     @Inject(
         method = "moveEntityByPiston(Lnet/minecraft/core/Direction;Lnet/minecraft/world/entity/Entity;DLnet/minecraft/core/Direction;)V",

@@ -1,23 +1,23 @@
 {
     "schemaVersion": 1,
-    "id": "nopistonentity",
+    "id": "notsimulateitempush",
     "version": "${version}",
-    "name": "No Piston Entity Push",
-    "description": "Disables client-side piston pushing of item entities (掉落物). Other entities are unaffected.",
+    "name": "Not Simulate Item Push",
+    "description": "Client-side: skips piston simulation for item entities so they aren't visually pushed. Server simulation is unaffected.",
     "authors": ["CCSwitch"],
     "contact": {},
     "license": "MIT",
     "environment": "client",
     "entrypoints": {
         "client": [
-            "com.ccswitch.nopistonentity.NoPistonEntityMod"
+            "com.ccswitch.notsimulateitempush.NotSimulateItemPushMod"
         ],
         "modmenu": [
-            "com.ccswitch.nopistonentity.config.ModMenuIntegration"
+            "com.ccswitch.notsimulateitempush.config.ModMenuIntegration"
         ]
     },
     "mixins": [
-        "nopistonentity.mixins.json"
+        "notsimulateitempush.mixins.json"
     ],
     "depends": {
         "fabricloader": ">=0.16.0",

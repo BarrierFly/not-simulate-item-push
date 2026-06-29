@@ -1,6 +1,6 @@
-package com.ccswitch.nopistonentity.mixin;
+package com.ccswitch.notsimulateitempush.mixin;
 
-import com.ccswitch.nopistonentity.config.ModConfig;
+import com.ccswitch.notsimulateitempush.config.ModConfig;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.core.BlockPos;
@@ -26,7 +26,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
  */
 @Mixin(BlockBehaviour.class)
 @Environment(EnvType.CLIENT)
-public abstract class PistonBlockCollisionMixin {
+public abstract class PistonBaseCollisionMixin {
 
     @Inject(
         method = "getCollisionShape(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/BlockGetter;Lnet/minecraft/core/BlockPos;Lnet/minecraft/world/phys/shapes/CollisionContext;)Lnet/minecraft/world/phys/shapes/VoxelShape;",

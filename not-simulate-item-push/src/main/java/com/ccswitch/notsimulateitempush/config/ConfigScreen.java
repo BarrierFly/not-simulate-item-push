@@ -1,4 +1,4 @@
-package com.ccswitch.nopistonentity.config;
+package com.ccswitch.notsimulateitempush.config;
 
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
@@ -12,7 +12,7 @@ public class ConfigScreen extends Screen {
     private final Screen parent;
 
     public ConfigScreen(Screen parent) {
-        super(Component.literal("No Piston Entity Push"));
+        super(Component.literal("Not Simulate Item Push"));
         this.parent = parent;
     }
 
@@ -24,11 +24,11 @@ public class ConfigScreen extends Screen {
         // Toggle 1: disable item push
         this.addRenderableWidget(
             Button.builder(
-                toggleLabel("Drop Items Protected", config.enabled),
+                toggleLabel("Not Simulate Item Push", config.enabled),
                 btn -> {
                     config.enabled = !config.enabled;
                     ModConfig.save();
-                    btn.setMessage(toggleLabel("Drop Items Protected", config.enabled));
+                    btn.setMessage(toggleLabel("Not Simulate Item Push", config.enabled));
                 }
             ).pos(cx - 150, this.height / 2 - 30).size(300, 20).build()
         );
