@@ -5,6 +5,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.piston.MovingPistonBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
@@ -34,7 +35,7 @@ public abstract class MovingPistonCollisionMixin {
     )
     private void removeMovingPistonCollision(BlockState state, BlockGetter level, BlockPos pos,
                                               CollisionContext context, CallbackInfoReturnable<VoxelShape> cir) {
-        if (ModConfig.get().disablePistonCollision) {
+        if (level instanceof Level lvl && lvl.isClientSide() && ModConfig.get().disablePistonCollision) {
             cir.setReturnValue(Shapes.empty());
         }
     }

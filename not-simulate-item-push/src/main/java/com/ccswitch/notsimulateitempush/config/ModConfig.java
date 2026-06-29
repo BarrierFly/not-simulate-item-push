@@ -18,7 +18,7 @@ public class ModConfig {
 
     private static ModConfig instance;
 
-    public boolean enabled = true;
+    public boolean skipItemPush = true;
     public boolean disablePistonCollision = false;
 
     public static ModConfig get() {

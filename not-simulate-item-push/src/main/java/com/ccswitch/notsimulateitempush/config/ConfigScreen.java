@@ -24,11 +24,11 @@ public class ConfigScreen extends Screen {
         // Toggle 1: disable item push
         this.addRenderableWidget(
             Button.builder(
-                toggleLabel("Not Simulate Item Push", config.enabled),
+                toggleLabel("Skip Item Push", config.skipItemPush),
                 btn -> {
-                    config.enabled = !config.enabled;
+                    config.skipItemPush = !config.skipItemPush;
                     ModConfig.save();
-                    btn.setMessage(toggleLabel("Not Simulate Item Push", config.enabled));
+                    btn.setMessage(toggleLabel("Skip Item Push", config.skipItemPush));
                 }
             ).pos(cx - 150, this.height / 2 - 30).size(300, 20).build()
         );

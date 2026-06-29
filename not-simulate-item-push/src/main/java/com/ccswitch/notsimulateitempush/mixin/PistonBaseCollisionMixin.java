@@ -5,6 +5,7 @@ import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.piston.PistonBaseBlock;
 import net.minecraft.world.level.block.piston.PistonHeadBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -35,7 +36,7 @@ public abstract class PistonBaseCollisionMixin {
     )
     private void removePistonCollision(BlockState state, BlockGetter level, BlockPos pos,
                                         CollisionContext context, CallbackInfoReturnable<VoxelShape> cir) {
-        if (!ModConfig.get().disablePistonCollision) {
+        if (!ModConfig.get().disablePistonCollision || !(level instanceof Level lvl) || !lvl.isClientSide()) {
             return;
         }
         if (state.getBlock() instanceof PistonBaseBlock || state.getBlock() instanceof PistonHeadBlock) {
