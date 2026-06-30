@@ -5,7 +5,8 @@
     "client": [
         "ItemEntityPushMixin",
         "PistonBaseCollisionMixin",
-        "MovingPistonCollisionMixin"
+        "MovingPistonCollisionMixin",
+        "DestroyParticleMixin"
     ],
     "injectors": {
         "defaultRequire": 1

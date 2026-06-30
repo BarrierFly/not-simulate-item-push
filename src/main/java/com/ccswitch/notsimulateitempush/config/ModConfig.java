@@ -20,6 +20,7 @@ public class ModConfig {
 
     public boolean skipItemPush = true;
     public boolean disablePistonCollision = true;
+    public boolean disableDestroyParticles = false;
 
     public static ModConfig get() {
         if (instance == null) {
