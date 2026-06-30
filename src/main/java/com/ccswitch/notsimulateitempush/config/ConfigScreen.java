@@ -5,7 +5,7 @@ import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
 
 /**
- * Minimal config screen with two toggle buttons. No Cloth Config needed.
+ * Minimal config screen with three toggle buttons. No Cloth Config needed.
  */
 public class ConfigScreen extends Screen {
 
@@ -30,7 +30,7 @@ public class ConfigScreen extends Screen {
                     ModConfig.save();
                     btn.setMessage(toggleLabel("Skip Item Push", config.skipItemPush));
                 }
-            ).pos(cx - 150, this.height / 2 - 30).size(300, 20).build()
+            ).pos(cx - 150, this.height / 2 - 45).size(300, 20).build()
         );
 
         // Toggle 2: disable piston block collision
@@ -42,7 +42,19 @@ public class ConfigScreen extends Screen {
                     ModConfig.save();
                     btn.setMessage(toggleLabel("Piston Block Collision", config.disablePistonCollision));
                 }
-            ).pos(cx - 150, this.height / 2).size(300, 20).build()
+            ).pos(cx - 150, this.height / 2 - 15).size(300, 20).build()
+        );
+
+        // Toggle 3: disable destroy particles
+        this.addRenderableWidget(
+            Button.builder(
+                toggleLabel("Disable Destroy Particles", config.disableDestroyParticles),
+                btn -> {
+                    config.disableDestroyParticles = !config.disableDestroyParticles;
+                    ModConfig.save();
+                    btn.setMessage(toggleLabel("Disable Destroy Particles", config.disableDestroyParticles));
+                }
+            ).pos(cx - 150, this.height / 2 + 15).size(300, 20).build()
         );
 
         // Done button
@@ -50,7 +62,7 @@ public class ConfigScreen extends Screen {
             Button.builder(
                 Component.literal("Done"),
                 btn -> this.onClose()
-            ).pos(cx - 75, this.height / 2 + 30).size(150, 20).build()
+            ).pos(cx - 150, this.height / 2 + 45).size(300, 20).build()
         );
     }
 
