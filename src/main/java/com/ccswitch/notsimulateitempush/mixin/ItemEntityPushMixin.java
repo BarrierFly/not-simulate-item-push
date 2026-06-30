@@ -32,7 +32,7 @@ public abstract class ItemEntityPushMixin {
         cancellable = true
     )
     private static void cancelItemEntityPush(Direction direction, Entity entity, double d, Direction direction2, CallbackInfo ci) {
-        if (entity.level.isClientSide() && ModConfig.get().skipItemPush && entity instanceof ItemEntity) {
+        if (((EntityLevelAccessor) entity).getLevel().isClientSide() && ModConfig.get().skipItemPush && entity instanceof ItemEntity) {
             ci.cancel();
         }
     }
