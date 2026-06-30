@@ -30,8 +30,8 @@ All changes are **client-side only**. Server simulation is unaffected.
 
 ## Requirements / 运行要求
 
-- Minecraft 1.19.4
-- Fabric Loader ≥ 0.14.21
+- Minecraft 1.20.1
+- Fabric Loader ≥ 0.15.0
 - Java 17+
 - Mod Menu (optional / 可选 — for in-game config screen / 游戏内配置界面)
 
@@ -66,7 +66,7 @@ If you need this mod for a different Minecraft version, feel free to **Vibe Code
 ./gradlew build
 ```
 
-Output / 输出: `build/libs/notsimulateitempush-1.19.4-<version>.jar`
+Output / 输出: `build/libs/notsimulateitempush-1.20.1-<version>.jar`
 
 ## License / 许可
 
